@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation & Sanitation Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "b9839728-b062-4dcc-81c5-ce2f129e738a", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "b524d777-53d9-4125-abf0-4dfab6af91a5", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <nav>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/37/f4/9e/37f49e7a7e6f619cd0c074dc98870801.jpg" alt="Water Ed Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#techniques">Techniques</a></li>
+            <li><a href="#practices">Practices</a></li>
+            <li><a href="#usage">Usage Tips</a></li>
+            <li><a href="#importance">Importance</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="alt-section">
+            <div class="section-content">
+                <h2>About Water Conservation</h2>
+                <p>Water conservation refers to the responsible use and preservation of water resources. It involves both using water efficiently and minimizing waste. Conserving water is crucial to ensure sustainable access to clean water for future generations.</p>
+            </div>
+            <div class="section-image">
+                <div class="image-container">
+                    <img src="images/water_background.jpeg" alt="Water Conservation">
+                    <div class="overlay">
+                        <div class="text">About Water Conservation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="techniques">
+            <div class="section-content">
+                <h2>Water Conservation Techniques</h2>
+                <p>Here are some effective ways to conserve water:</p>
+                <ul>
+                    <li>Install water-efficient fixtures (e.g., faucets, showerheads, toilets).</li>
+                    <li>Fix leaks promptly to prevent water wastage.</li>
+                    <li>Collect rainwater for outdoor use (e.g., gardening).</li>
+                    <li>Use water-saving appliances (e.g., dishwashers, washing machines).</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <div class="image-container">
+                    <img src="images/water conservation techniques.jpg" alt="Water Conservation Techniques">
+                    <div class="overlay">
+                        <div class="text">Water Conservation Techniques</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="practices" class="alt-section">
+            <div class="section-content">
+                <h2>Practices to Maintain Clean Water</h2>
+                <p>Maintaining clean water sources is essential for public health. Key practices include:</p>
+                <ul>
+                    <li>Regular testing and treatment of water sources.</li>
+                    <li>Proper waste disposal to prevent contamination.</li>
+                    <li>Protecting water bodies from pollution.</li>
+                    <li>Community education on water hygiene.</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <div class="image-container">
+                    <img src="images/Practices to Maintain Clean Water.jpg" alt="Practices to Maintain Clean Water">
+                    <div class="overlay">
+                        <div class="text">Practices to Maintain Clean Water</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage">
+            <div class="section-content">
+                <h2>Tips for Reducing Water Usage</h2>
+                <p>Small changes can make a big difference in reducing water consumption:</p>
+                <ul>
+                    <li>Take shorter showers.</li>
+                    <li>Turn off the tap while brushing teeth or shaving.</li>
+                    <li>Use a broom instead of a hose to clean driveways and sidewalks.</li>
+                    <li>Water your garden during cooler parts of the day to minimize evaporation.</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <div class="image-container">
+                    <img src="images\water saving tips.jpg" alt="Tips for Reducing Water Usage">
+                    <div class="overlay">
+                        <div class="text">Tips for Reducing Water Usage</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="importance" class="alt-section">
+            <div class="section-content">
+                <h2>Awareness about the Importance of Sanitation</h2>
+                <p>Sanitation practices are crucial for maintaining clean water sources and preventing waterborne diseases. Awareness efforts include:</p>
+                <ul>
+                    <li>Promoting handwashing with soap and clean water.</li>
+                    <li>Safe disposal of waste and sewage.</li>
+                    <li>Protecting water sources from contamination.</li>
+                    <li>Ensuring access to clean water for all communities.</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <div class="image-container">
+                    <img src="images/Importance of water.jpg" alt="Awareness about the Importance of Sanitation">
+                    <div class="overlay">
+                        <div class="text">Awareness about the Importance of Sanitation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <form action="submit.php" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Water Conservation Education. All rights reserved.</p>
+    </footer>
+</body>
+</html
